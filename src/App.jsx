@@ -4,15 +4,15 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Error from "./Pages/Error";
 
-const homeUri = process.env.PUBLIC_URL;
+const homeUrl = process.env.PUBLIC_URL;
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path={homeUri} element={<Home />} />
-          <Route path={homeUri + "/about"} element={<About />} />
+          <Route path={homeUrl} element={<Home />} />
+          <Route path={homeUrl + "/about"} element={<About />} />
           <Route path={"*"} element={<Error />} />
         </Routes>
       </Router>
