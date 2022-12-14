@@ -1,13 +1,15 @@
-import './App.css';
+import React from "react";
 
-function App() {
+function About() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ADSIGNWEB.COM</h1>
+        <p>
+          ABOUT
+        </p>
       </header>
     </div>
   );
 }
 
-export default App;
+export default About;
