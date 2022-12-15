@@ -11,8 +11,18 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-       <title>YuasysTest01</title>
-       <!-- YuasysTest01:タイトル変更 -->
+    <title>YuasysTest02</title>
+    <!-- YuasysTest01->2:タイトル変更 -->
+    <script>
+      (function(){
+      const query = window.location.search;
+      if (query.startsWith('?p=')) {
+        const route = decodeURIComponent(query.substr(3));
+        window.history.replaceState(null, null, route);
+      }
+    })();
+ 
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
